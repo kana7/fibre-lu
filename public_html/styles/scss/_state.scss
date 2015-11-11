@@ -1,0 +1,18 @@
+@include media(phone){
+
+}
+@include media(tab){
+    .container-wrapper{
+        width: 640px;
+    }
+}
+@include media(desk){
+    .container-wrapper{
+        width: 1024px;
+    }
+}
+@include media(lgdesk){
+    .container-wrapper{
+        width: 1280px;
+    }
+}
