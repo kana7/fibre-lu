@@ -1,5 +1,6 @@
 @mixin base-style(){
     font-family: $font-stack;
+    font-weight: 300;
     font-size: $font-size;
     color: $black;
     line-height: $base-line-height;

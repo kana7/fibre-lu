@@ -1,10 +1,18 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Nov 11, 2015, 10:08:41 AM
-    Author     : pc
-*/
+.blue-background{
+    background-color: $blue;
+}
+.bluedark-background{
+    background-color: $blue-dark;
+}
+.grey-background{
+    background-color: $light-grey;
+}
 
+.white{
+    color: $white;
+}
+
+
+.background-footer{
+    background-image: url(../../images/);
+}
