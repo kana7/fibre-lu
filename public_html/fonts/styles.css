@@ -62,3 +62,9 @@
 .icon-right-arrow:before {
   content: "h";
 }
+.icon-down-arrow:before {
+  content: "i";
+}
+.icon-up-arrow:before {
+  content: "j";
+}

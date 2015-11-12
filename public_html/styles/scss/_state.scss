@@ -1,18 +1,43 @@
 @include media(phone){
-
+    .container-wrapper {
+        width: 320px;
+        padding: 0 15px;
+    }
 }
 @include media(tab){
     .container-wrapper{
         width: 640px;
+    }
+    .background-footer{
+        height: 250px;
+        background-image: url(../../images/_BG_Footer/Footer_BG_1056x250px.png);
+        background-size: 1056px auto;
     }
 }
 @include media(desk){
     .container-wrapper{
         width: 1024px;
     }
+    .absolute-vertical-align-middle
+    {
+        @include vertical-align-middle(absolute);
+    }
+    .vertical-align-middle{
+        @include vertical-align-middle();
+    }
+    .background-footer{
+        height: 250px;
+        background-image: url(../../images/_BG_Footer/Footer_BG_1302x250px.png);
+        background-size: 1302px auto;
+    }
 }
 @include media(lgdesk){
     .container-wrapper{
         width: 1280px;
+    }
+    .background-footer{
+        height: 368px;
+        background-image: url(../../images/_BG_Footer/Footer_BG_1920x368px.png);
+        background-size: 1920px auto;
     }
 }

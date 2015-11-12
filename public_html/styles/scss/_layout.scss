@@ -12,13 +12,6 @@
     @include clearfix;
 }
 
-.absolute-vertical-align-middle
-{
-    @include vertical-align-middle(absolute);
-}
-.vertical-align-middle{
-    @include vertical-align-middle();
-}
 .disable-vertical-align-middle{
     @include disable-vertical-align();
 }

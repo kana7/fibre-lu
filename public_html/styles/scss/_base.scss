@@ -26,7 +26,7 @@ h3{
     color: $blue;
 }
 h1{
-    font-size: 38pt;
+    font-size: 33.8pt;
     font-weight: 700;
 }
 h4{
@@ -39,6 +39,10 @@ a{
     font-size: inherit;
     color: inherit;
     text-decoration: none;
+}
+button{
+    background: none;
+    border: none;
 }
 
 @charset "UTF-8";
@@ -81,26 +85,32 @@ a{
 }
 
 .icon-euro-ico:before {
-    content: "a";
+  content: "a";
 }
 .icon-flash-ico:before {
-    content: "b";
+  content: "b";
 }
 .icon-wifi-ico:before {
-    content: "c";
+  content: "c";
 }
 .icon-tool-ico:before {
-    content: "d";
+  content: "d";
 }
 .icon-phone-icone:before {
-    content: "e";
+  content: "e";
 }
 .icon-internet-ico:before {
-    content: "f";
+  content: "f";
 }
 .icon-clock-icone:before {
-    content: "g";
+  content: "g";
 }
 .icon-right-arrow:before {
-    content: "h";
+  content: "h";
+}
+.icon-down-arrow:before {
+  content: "i";
+}
+.icon-up-arrow:before {
+  content: "j";
 }
