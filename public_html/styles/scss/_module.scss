@@ -12,12 +12,16 @@
     color: $white;
 }
 
+section{
+    @include box-shadow(0 2px 50px 5px rgba(0, 0, 0, 0.2));
+}
+
 .section-padding{
     padding: 10px 0;
 }
 
 .background-footer{
-    height: 326px;
+    height: 304px;
     background-image: url(../../images/_BG_Footer/Footer_BG_672x326px.png);
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -102,4 +106,35 @@
         line-height: 19px;
         margin: 0;
     }
+}
+.background-footer{
+    .logo-lol{
+        text-align: center;
+        margin-bottom: 15px;
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    .clearfix{
+        @include vertical-align-middle();
+    }
+    h4{
+        font-size: 21px;
+        margin: 0 0 15px;
+
+    }
+    p{
+        color: $white;
+        text-align: justify;
+        font-size: 18px;
+        line-height: 23px;
+        margin: 0;
+    }
+}
+.footer{
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 0;
+    color: $white;
 }
