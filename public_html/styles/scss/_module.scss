@@ -19,7 +19,9 @@ section{
 .section-padding{
     padding: 10px 0;
 }
-
+.margin{
+    margin-bottom: 220px;
+}
 .background-footer{
     height: 304px;
     background-image: url(../../images/_BG_Footer/Footer_BG_672x326px.png);
@@ -44,6 +46,20 @@ section{
 .btn-outline-white{
     @include btn-outline($white);
 }
+
+.portable-img, #fibre-bg, #tech-bg{
+    background-repeat: no-repeat;
+}
+.portable-img{
+    background-image: url(../../images/portable.jpg);
+}
+#fibre-bg{
+    background-image: url(../../images/fibre.jpg);
+}
+#tech-bg{
+    background-image: url(../../images/technician.jpg);
+}
+
 .btn-blue{
     display: inline-block;
     position: relative;
@@ -74,7 +90,7 @@ section{
 .main-title{
     font-size: 38px;
     text-align: center;
-    margin: 15px 0 150px;
+    margin: 15px 0 15px;
 }
 .fibre-presentation p{
     font-size: 18px;
@@ -167,4 +183,42 @@ section{
     line-height: 24px;
     padding: 10px 0;
     color: $white;
+}
+
+.dropdown{
+    div:not([data-trigger]){
+        display: none;
+        &.is-visible{
+            display: block;
+        }
+    }
+}
+
+.contact{
+    font-size: 11pt;
+
+    color: darken($white, 15%);
+    background-color: $blue;
+
+    span[class^=icon-]
+    {
+        font-size: 15pt;
+
+        top: 4px;
+
+        color: $white;
+    }
+}
+.contact-infos{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #004994;
+    font-weight: 800;
+    font-size: 14px;
+    span{
+        display: block;
+        margin-top: 5px;
+        font-weight: 400;
+    }
 }

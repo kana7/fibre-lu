@@ -43,6 +43,9 @@ a{
 button{
     background: none;
     border: none;
+    &:focus{
+        outline: 0;
+    }
 }
 
 @charset "UTF-8";

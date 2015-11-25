@@ -1,4 +1,13 @@
+var temp;
+
 $(function () {
+    if ($('.dropdown')) {
+        $('.dropdown').each(function () {
+            temp = new DropDown($(this));
+            temp.init();
+        });
+    }
+
     $(".main").onepage_scroll({
         sectionContainer: "section", // sectionContainer accepts any kind of selector in case you don't want to use section
         easing: "ease-in-out", // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
@@ -22,3 +31,21 @@ $(function () {
     });
 });
 
+
+//Affiche un container au clique sur un élément dans un container .dropdown
+var DropDown = function (element) {
+    var $dropdown = element;
+    var $dropButton = $dropdown.children('[data-trigger]');
+    var $hiddenContainer = $dropdown.children(':not([data-trigger])');
+
+    this.init = function () {
+        _bindEvents();
+    };
+    var _bindEvents = function () {
+        $dropButton.on('click', _triggerDrop.bind(this));
+    };
+    var _triggerDrop = function () {
+        $dropButton.toggleClass('is-active');
+        $hiddenContainer.toggleClass('is-visible');
+    };
+};

@@ -13,6 +13,20 @@
         background-image: url(../../images/_BG_Footer/Footer_BG_1056x250px.png);
         background-size: 1056px auto;
     }
+    .contact
+    {
+        ul{
+            &.center{
+                @include display-flex-center;
+                li:not(:last-child){
+                    margin-right: 150px;
+                }
+            }
+        }
+        li{
+            width: auto;
+        }
+    }
 }
 @include media(desk){
     .container-wrapper{
@@ -30,6 +44,18 @@
         background-image: url(../../images/_BG_Footer/Footer_BG_1302x250px.png);
         background-size: 1302px auto;
     }
+    .contact{
+        .text{
+            text-align: left;
+            width: auto;
+            margin: 0;
+            float: left;
+            margin-top: 5px;
+        }
+        ul{
+            width: 75%;
+        }
+    } 
 }
 @include media(lgdesk){
     .container-wrapper{
